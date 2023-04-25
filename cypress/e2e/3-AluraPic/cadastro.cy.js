@@ -25,7 +25,7 @@ describe('Register of AluraPic user',()=>{
         cy.contains('a','Register now').click();
         cy.get('input[formcontrolname=userName]').type('Felipe');
         cy.contains('button', 'Register').click();
-        cy.contains('ap-vmessage', 'lacd').should('be.visible');
+        cy.contains('ap-vmessage', 'Must be lower case').should('be.visible');
     })
 
     it('verify minimum password lenght message',() => {
