@@ -5,7 +5,7 @@ module.exports = defineConfig({
   reporter: 'mochawesome',
   reporterOptions: {
     reportDir: "cypress/report/mochawesome-report",
-    overwrite: true,
+    overwrite: false,
     html: true,
     json: false,
     timestamp: "mmddyy_HHMMss",

@@ -1,6 +1,11 @@
 #cypress env file
 cypress.env.json
 
+#mochawesome reports
+mochawesome-report/
+screenshots/
+videos/
+
 # Logs
 logs
 *.log

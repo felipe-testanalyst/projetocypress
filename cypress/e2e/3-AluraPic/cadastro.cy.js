@@ -37,7 +37,7 @@ describe('Register of AluraPic user',()=>{
 
     const users = require('../../fixtures/users.json')
     users.forEach(user => {
-        it('Register new user' + ' '+ user.userName, () => {
+        it(`Register new user ${user.userName}`, () => {
             cy.register(user.email, user.fullName, user.userName, user.password);
         })
     })
